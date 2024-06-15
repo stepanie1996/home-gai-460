@@ -52,23 +52,27 @@ const Style = () => {
 
     // 自定义滚动条
     ::-webkit-scrollbar {
-        width: 5px;
-        height: 5px;
+        width: 8px;
+        height: 8px;
     }
 
     ::-webkit-scrollbar-track {
-        background: transparent;
+        background: #f5f5f5;
     }
 
     ::-webkit-scrollbar-thumb {
-        background-color: #49b1f5;
+        background-color: #B0C4DE;
+        border-radius: 8px;
     }
 
+    /*
+    @supports not (-webkit-scrollbar: none) {
     * {
-        scrollbar-width:thin;
-        scrollbar-color: #49b1f5 transparent
+        scrollbar-width: thin;
+        scrollbar-color: #49b1f5 transparent;
     }
-    
+}
+不考虑兼容性了*/
 
   `}</style>)
 }
